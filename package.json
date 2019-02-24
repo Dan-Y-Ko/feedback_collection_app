@@ -1,0 +1,22 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "engines": {
+        "node": "10.13.0",
+        "npm": "6.5.0"
+    },
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "cookie-session": "^2.0.0-beta.3",
+        "express": "^4.16.4",
+        "mongoose": "^5.4.15",
+        "nodemon": "^1.18.10",
+        "passport": "^0.4.0",
+        "passport-google-oauth20": "^1.0.0"
+    }
+}
