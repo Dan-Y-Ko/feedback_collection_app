@@ -17,7 +17,7 @@ export class Header extends Component {
             default:
                 return [
                     <li key="4" style={{ marginRight: "5px" }}>
-                        {/* Welcome, {this.props.auth.name.split(" ")[0]} */}
+                        Welcome, {this.props.auth.name.split(" ")[0]}
                     </li>,
                     <li key="1">
                         <Payments />
