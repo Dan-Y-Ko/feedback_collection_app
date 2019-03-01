@@ -19,11 +19,11 @@ export class Header extends Component {
                     <li key="4" style={{ marginRight: "5px" }}>
                         Welcome, {this.props.auth.name.split(" ")[0]}
                     </li>,
-                    <li key="1">
-                        <Payments />
-                    </li>,
                     <li key="2" style={{ margin: "0 10px" }}>
                         Credits: {this.props.auth.credits}
+                    </li>,
+                    <li key="1">
+                        <Payments />
                     </li>,
                     <li key="3">
                         <a href="/api/logout">Logout</a>
