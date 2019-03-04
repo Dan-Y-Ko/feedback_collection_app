@@ -10,8 +10,9 @@
         "start": "node index.js",
         "server": "nodemon index.js",
         "client": "yarn --cwd client run start",
-        "dev": "concurrently --k \"yarn run server\" \"yarn run client\"",
-        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+        "dev": "concurrently --k \"yarn run server\" \"yarn run client\" \"yarn run webhook\"",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+        "webhook": "lt -p 5000 -s asldjkasldka"
     },
     "license": "MIT",
     "dependencies": {
@@ -19,6 +20,7 @@
         "concurrently": "^4.1.0",
         "cookie-session": "^2.0.0-beta.3",
         "express": "^4.16.4",
+        "localtunnel": "^1.9.1",
         "mongoose": "^5.4.15",
         "nodemon": "^1.18.10",
         "passport": "^0.4.0",
