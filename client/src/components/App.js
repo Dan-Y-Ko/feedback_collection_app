@@ -22,6 +22,10 @@ class App extends Component {
                         <Route exact path="/" component={Landing} />
                         <Route exact path="/surveys" component={Dashboard} />
                         <Route path="/surveys/new" component={SurveyNew} />
+                        <Route
+                            path="/api/surveys/:surveyId/:choice"
+                            render={() => "Thanks for your feedback!"}
+                        />
                     </div>
                 </BrowserRouter>
             </div>
